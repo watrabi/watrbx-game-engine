@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4">
+
+    <issue
+        id="LintError"
+        severity="Error"
+        message="Can&apos;t find API database; API check not performed"
+        category="Lint"
+        priority="10"
+        summary="Lint Failure"
+        explanation="This issue type represents a problem running lint itself. Examples include failure to find bytecode for source files (which means certain detectors could not be run), parsing errors in lint configuration files, etc.
+These errors are not errors in your own code, but they are shown to make it clear that some checks were not completed.">
+        <location
+            file="/mnt/f/Trunk2012/BuildWatrbx/RobloxHybrid/platforms/android/Hybrid/hybridlib"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Target SDK attribute is not targeting latest version"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.
+
+To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        url="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        urls="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="        targetSdkVersion 21"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/mnt/f/Trunk2012/BuildWatrbx/RobloxHybrid/platforms/android/Hybrid/hybridlib/build.gradle"
+            line="9"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="Old buildToolsVersion 21.1.1; recommended version is 21.1.2 or later"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    buildToolsVersion &quot;21.1.1&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/mnt/f/Trunk2012/BuildWatrbx/RobloxHybrid/platforms/android/Hybrid/hybridlib/build.gradle"
+            line="5"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="Dependency on a support library, but the SDK installation does not have the &quot;Extras > Android Support Repository&quot; installed. Open the SDK manager and install it."
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    compile &apos;com.android.support:support-v4:21.0.0&apos;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/mnt/f/Trunk2012/BuildWatrbx/RobloxHybrid/platforms/android/Hybrid/hybridlib/build.gradle"
+            line="30"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="AddJavascriptInterface"
+        severity="Warning"
+        message="`WebView.addJavascriptInterface` should not be called with minSdkVersion &lt; 17 for security reasons: JavaScript can use reflection to manipulate application"
+        category="Security"
+        priority="9"
+        summary="addJavascriptInterface Called"
+        explanation="For applications built for API levels below 17, `WebView#addJavascriptInterface` presents a security hazard as JavaScript on the target web page has the ability to use reflection to access the injected object&apos;s public fields and thus manipulate the host application in unintended ways."
+        url="https://labs.mwrinfosecurity.com/blog/2013/09/24/webview-addjavascriptinterface-remote-code-execution/"
+        urls="https://labs.mwrinfosecurity.com/blog/2013/09/24/webview-addjavascriptinterface-remote-code-execution/"
+        errorLine1="        this.addJavascriptInterface(bridge, &quot;__globalRobloxAndroidBridge__&quot;);"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/mnt/f/Trunk2012/BuildWatrbx/RobloxHybrid/platforms/android/Hybrid/hybridlib/src/main/java/com/roblox/hybrid/RBHybridWebView.java"
+            line="100"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.hybrid_library_name` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;hybrid_library_name&quot;>HybridLibrary&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/mnt/f/Trunk2012/BuildWatrbx/RobloxHybrid/platforms/android/Hybrid/hybridlib/src/main/res/values/strings.xml"
+            line="2"
+            column="13"/>
+    </issue>
+
+</issues>

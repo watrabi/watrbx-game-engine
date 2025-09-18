@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android.iml" filepath="$PROJECT_DIR$/Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RobloxHybrid/platforms/android/Hybrid/hybridlib/Hybrid.iml" filepath="$PROJECT_DIR$/../RobloxHybrid/platforms/android/Hybrid/hybridlib/Hybrid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NativeShell/NativeShell.iml" filepath="$PROJECT_DIR$/NativeShell/NativeShell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/google_play_services/libproject/google-play-services_lib/google-play-services_lib.iml" filepath="$PROJECT_DIR$/google_play_services/libproject/google-play-services_lib/google-play-services_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/google_play_services/google_play_services.iml" filepath="$PROJECT_DIR$/google_play_services/google_play_services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/google_play_services/libproject/libproject.iml" filepath="$PROJECT_DIR$/google_play_services/libproject/libproject.iml" />
+    </modules>
+  </component>
+</project>

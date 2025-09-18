@@ -1,0 +1,11 @@
+{
+  "assemblies": [
+    {
+      "name": "Roblox.WebsiteSettings",
+      "include": [ "Roblox.WebsiteSettings.Properties" ],
+      "exclude": []
+    }
+  ],
+  "assembliesPath": "C:\\Roblox\\Branches\\Client.LegacyAssemblies\\WebsiteSettings\\bin\\Release",
+  "outputPath": "models"
+}

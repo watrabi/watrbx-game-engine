@@ -1,0 +1,83 @@
+{
+  "EndPoints": [
+  {
+    "Protocol": "https",
+    "Host": "api.sitetest3.pizzaboxer.fun",
+    "RelyingParty": "https://api.sitetest3.pizzaboxer.fun/",
+    "TokenType": "JWT",
+    "HostType": "fqdn"
+  },
+  {
+    "Protocol": "https",
+    "Host": "api.sitetest2.pizzaboxer.fun",
+    "RelyingParty": "https://api.sitetest2.pizzaboxer.fun/",
+    "TokenType": "JWT",
+    "HostType": "fqdn"
+  },
+  {
+    "Protocol": "https",
+    "Host": "api.sitetest1.pizzaboxer.fun",
+    "RelyingParty": "https://api.sitetest1.pizzaboxer.fun/",
+    "TokenType": "JWT",
+    "HostType": "fqdn"
+  },
+  {
+    "Protocol": "https",
+    "Host": "api.gametest5.pizzaboxer.fun",
+    "RelyingParty": "https://api.gametest5.pizzaboxer.fun/",
+    "TokenType": "JWT",
+    "HostType": "fqdn"
+  },
+  {
+    "Protocol": "https",
+    "Host": "api.gametest4.pizzaboxer.fun",
+    "RelyingParty": "https://api.gametest4.pizzaboxer.fun/",
+    "TokenType": "JWT",
+    "HostType": "fqdn"
+  },
+  {
+    "Protocol": "https",
+    "Host": "api.gametest3.pizzaboxer.fun",
+    "RelyingParty": "https://api.gametest3.pizzaboxer.fun/",
+    "TokenType": "JWT",
+    "HostType": "fqdn"
+  },
+  {
+    "Protocol": "https",
+    "Host": "api.gametest2.pizzaboxer.fun",
+    "RelyingParty": "https://api.gametest2.pizzaboxer.fun/",
+    "TokenType": "JWT",
+    "HostType": "fqdn"
+  },
+  {
+    "Protocol": "https",
+    "Host": "api.gametest1.pizzaboxer.fun",
+    "RelyingParty": "https://api.gametest1.pizzaboxer.fun/",
+    "TokenType": "JWT",
+    "HostType": "fqdn"
+  },
+  {
+    "Protocol": "https",
+    "Host": "api.watrbx.wtf",
+    "RelyingParty": "https://api.watrbx.wtf/",
+    "TokenType": "JWT",
+    "HostType": "fqdn"
+  },
+  {
+    "Protocol": "https",
+    "Host": "*",
+    "RelyingParty": "http://xboxlive.com",
+    "TokenType": "JWT",
+    "HostType": "ip"
+  },
+  {
+    "Protocol": "https",
+    "Host": "*",
+    "HostType": "wildcard"
+  },
+  {
+    "Protocol": "http",
+    "Host": "*",
+    "HostType": "wildcard"
+  }]
+}

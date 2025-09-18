@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="F:\Trunk2012\Client\Android\google_play_services\libproject\google-play-services_lib\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="F:\Trunk2012\Client\Android\google_play_services\libproject\google-play-services_lib\build-types\debug\jniLibs"/></dataSet></merger>
